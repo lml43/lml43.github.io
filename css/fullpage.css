@@ -1,0 +1,356 @@
+@import "font.css";
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: rgb(255, 255, 255);
+}
+
+#fp-nav.fp-left {
+    left: 4%;
+}
+
+#fullpage {
+    transition-delay: 0.1s !important;
+}
+
+.icon {
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: translate(-50%, -50%);
+}
+
+.fullpage_slide {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    z-index: 200;
+    margin-left: 11%;
+}
+
+.title-text {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    font-family: "Effra";
+    font-weight: normal;
+    text-shadow: 0 10px 20px rgb(2 11 22 / 100%);
+    transition: all 0s ease;
+}
+
+.title .border {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.title .border span {
+    display: block;
+    width: 88px;
+    height: 4px;
+    border-radius: 5px;
+    background: #ff4d5a;
+    transition: all 0s ease-in-out;
+}
+
+.title .border span:first-child {
+    margin-bottom: 1.4rem;
+}
+
+.title .border span:last-child {
+    margin-left: 54px;
+}
+
+.title-lead {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-family: "Effra Light";
+    transition: all 0s ease-in-out;
+}
+
+.moon-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    align-items: center;
+    justify-content: center;
+}
+
+.moonlight {
+    position: absolute;
+    transform-style: preserve-3d;
+
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    margin: auto;
+    height: 1385px;
+    width: 1385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+}
+
+.moonlight-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.star-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15%
+}
+
+.moonlight-img {
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.crew {
+    position: absolute;
+    transform-style: preserve-3d;
+
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    margin: auto;
+    height: 1385px;
+    width: 1385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.crew-wrap {
+    position: relative;
+    width: 38%;
+    height: 38%;
+}
+
+.crew-layer {
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+}
+
+.crew-img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 50%;
+    border: white 4px solid;
+}
+
+.cloud {
+    position: absolute;
+}
+
+.cloud--front2 {
+    bottom: -18.53211%;
+    right: -50%;
+    width: 87.155%;
+    z-index: 5;
+}
+
+.cloud--front3 {
+    bottom: -5.137614678%;
+    left: -49.357798%;
+    width: 87.155%;
+    z-index: 5;
+}
+
+.cloud--back1 {
+    top: -22.38532%;
+    right: -7.706422%;
+    width: 69.724%;
+}
+
+.cloud--back2 {
+    top: -5.504587%;
+    left: -38.715596%;
+    width: 87.155%;
+}
+
+.cloud--back3 {
+    top: 20.55045%;
+    right: -49.357798%;
+    width: 88.44%;
+}
+
+@media screen and (max-width: 1250px) {
+    #fp-nav {
+        width: auto;
+        top: auto;
+        bottom: 32px;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    #fp-nav.fp-left {
+        left: 50%;
+    }
+
+    #fp-nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        margin-left: 50px
+    }
+
+    .title-text {
+        font-size: 2.5rem;
+    }
+
+    .moonlight {
+        width: 100vw;
+        height: 100vw;
+        left: 23%;
+    }
+
+    .crew {
+        width: 100vw;
+        height: 100vw;
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        width: 87.5%;
+        margin: 0 13%;
+        top: auto;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        bottom: 5rem;
+    }
+
+    .title .border {
+        margin-bottom: 0.8rem;
+    }
+
+    .title .border span {
+        width: 44px;
+        height: 2px;
+    }
+
+    .title .border span:first-child {
+        margin-bottom: 0.7rem;
+    }
+
+    .title .border span:last-child {
+        margin-left: 27px;
+    }
+
+    .title-text {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+        text-shadow: 0 3px 10px rgb(2 11 22 / 50%);
+    }
+
+    .title-lead {
+        font-size: 0.8rem;
+    }
+
+    .s1 .fullpage_slide {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        max-height: 667px;
+    }
+
+    .crew {
+        width: 165vw;
+        height: 165vw;
+        left: 50%;
+        top: -6rem;
+        bottom: auto;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    .moon-background {
+        height: 100%;
+        bottom: 0;
+        margin: auto;
+        max-height: 667px;
+    }
+
+    .moonlight {
+        width: 165vw;
+        height: 165vw;
+        left: 50%;
+        top: -6rem;
+        bottom: auto;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
