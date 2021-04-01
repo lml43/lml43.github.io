@@ -1,10 +1,22 @@
 @import "font.css";
+@import "about.css";
+
+:root {
+    --title-text-size-lg: 7rem;
+    --title-text-size-md: 4.3rem;
+    --title-text-size-sm: 2.2rem;
+}
 
 img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     width: 100%;
+}
+
+a {
+    color: #072142;
+    text-decoration: none;
 }
 
 #fp-nav ul li a span, 
@@ -45,7 +57,6 @@ img {
     color: #fff;
     position: absolute;
     overflow: hidden;
-    top: 50%;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
     z-index: 200;
@@ -53,11 +64,11 @@ img {
 }
 
 .title-text {
-    font-size: 4rem;
+    font-size: var(--title-text-size-lg);
     line-height: 1;
     letter-spacing: 0.1em;
     margin-bottom: 2rem;
-    font-family: "Effra";
+    font-family: "Futura";
     font-weight: normal;
     text-shadow: 0 10px 20px rgb(2 11 22 / 100%);
     transition: all 0s ease;
@@ -235,6 +246,37 @@ img {
     width: 88.44%;
 }
 
+.btn-wrap {
+    margin-top: 1.2rem;
+    bottom: 7%;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff4d5a;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'Futura Heavy';
+    padding: 18px 32px;
+    border-radius: 50px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    letter-spacing: 0.1em;
+}
+
+.top25 {
+    top: 25%;
+}
+
+.top50 {
+    top: 50%;
+}
+
+
 @media screen and (max-width: 1250px) {
     #fp-nav {
         width: auto;
@@ -264,7 +306,7 @@ img {
     }
 
     .title-text {
-        font-size: 2.5rem;
+        font-size: var(--title-text-size-md);
     }
 
     .moonlight {
@@ -308,7 +350,7 @@ img {
     }
 
     .title-text {
-        font-size: 1.8rem;
+        font-size: var(--title-text-size-sm);
         margin-bottom: 0.8rem;
         text-shadow: 0 3px 10px rgb(2 11 22 / 50%);
     }

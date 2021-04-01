@@ -1,0 +1,182 @@
+.flex.row {
+    flex-direction: row;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-wrap {
+    padding: 10%;
+    position: absolute;
+    bottom: 5%;
+}
+
+section:nth-of-type(2) .bullet-wrap {
+    height: intial;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.hex-wrap {
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+
+.hexagon {
+    background-color: white;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% * 0.57735);
+}
+
+.hexagon:before {
+    background-color: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    top: 0;
+    transform: rotateZ(60deg);
+    width: inherit;
+}
+
+.hexagon:after {
+    background-color: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    top: 0;
+    transform: rotateZ(-60deg);
+    width: inherit;
+}
+
+.hexagon img {
+    color: #fff;
+    width: 100%;
+    font-size: 34pt;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 1;
+}
+
+.flex.row-gt-sm {
+    flex-direction: row;
+}
+
+section .flex-50-gt-sm {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    max-height: 100%;
+    max-width: 50%;
+}
+
+section:nth-of-type(2) .skills-wrapper {
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    margin: 225px 10% 0 10%;
+}
+
+section:nth-of-type(2) .skills-wrapper .me {
+    height: 250px;
+    width: 290px;
+}
+
+section:nth-of-type(2) .skills-wrapper > .flex:first-child {
+    padding: 0 50px 0 50px;
+}
+
+section:nth-of-type(2) .skills-wrapper .label {
+    margin: 15px 0 10px 0;
+    font-size: 18pt;
+}
+
+section:nth-of-type(2) .bars-wrap {
+    max-width: 90%;
+    display: block;
+    width: calc(100% - 15px);
+}
+
+section:nth-of-type(2) .bar {
+    align-items: flex-end;
+    border: 1px solid white;
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    font-size: 11pt;
+    font-family: 'Futura';
+    height: 28px;
+    margin: 0 0 15px 0;
+    position: relative;
+
+    
+}
+
+section:nth-of-type(2) .bar.fill {
+    border: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #ffffffad;
+    opacity: 1;
+    padding: 0;
+}
+
+section:nth-of-type(2) .bar:nth-child(1) .fill {
+    transition: 1.1s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar .tag {
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #ffffff;
+    color: rgb(114, 114, 114);
+    height: 100%;
+    width: 110px;
+}
+
+section:nth-of-type(2) .bar span {
+    padding: 0 15px 0 0;
+    z-index: 1;
+}
+
+.animated.slide-in-left {
+    animation: slideInLeft 0.75s ease both;
+}
+
+.border-white {
+    border: 1px solid white;
+    box-sizing: content-box;
+}
+
+.about-lead {
+    color: rgb(236, 236, 236);
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-family: "Effra Light";
+    transition: all 0s ease-in-out;
+}
+
+.progress {
+    animation: initState 1s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both; 
+}
+
+@keyframes initState {
+  0% { width: 0; }
+}
+
+
