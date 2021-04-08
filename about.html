@@ -2,93 +2,366 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Basic -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>About Me - Linh Le</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- About Page CSS -->
+    <link rel="stylesheet" href="css/about-page.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/portfolio.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-    <h2>PORTFOLIO</h2>
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-        <button class="btn" onclick="filterSelection('people')"> People</button>
+<body id="page_portfolio" class="page_portfolio" style="background-image: none;">
+
+    <nav>
+        <div class="wrap">
+            <a href="./index.html" class="name" style="text-decoration: none;">LINH LE</a>
+            <div class="icons">
+                <a href="https://www.facebook.com/le.manhlinh.43/">
+                    <img src="./img/facebook.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/linh-le-219640194/">
+                    <img src="./img/linkedin.svg" alt="">
+                </a>
+                <a href="https://github.com/lml43">
+                    <img src="./img/github.svg" alt="">
+                </a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Projects</a></li>
+            <li><a href="./index.html#section4">Contact</a></li>
+
+            <li class="icons">
+                <a href="#">
+                    <img src="./img/facebook-b.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/linkedin-b.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/github-b.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container portfolio-content">
+
+        <div class="flex">
+            <div class="header waypoint animated slide-in-left" data-animation="slide-in-left">
+                ABOUT
+            </div>
+
+            <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+
+
+            <!-- Skills -->
+            <div class="skills-wrapper flex row-gt-sm col-lg-10">
+                <div class="flex flex-50-gt-sm waypoint animated slide-in-left" data-animation="slide-in-left">
+                    <img src="img/me500.png" class="me">
+                    <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+                    <div class="label bold">Who's this guy?</div>
+                    <div class="about-lead">
+                        I’m studying a Master program of AI in Warsaw University of Technology. <br> I have 2-year experience as a backend developer.
+                    </div>
+
+                </div>
+
+                <div class="flex flex-50-gt-sm waypoint bars-wrap animated slide-in-right" data-animation="slide-in-right">
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:80%">
+                            <div class="tag bold flex">Java</div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:80%">
+                            <div class="tag bold flex">Spring Boot</div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:70%">
+                            <div class="tag bold flex">Microservices</div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:60%">
+                            <div class="tag bold flex">PlayFramewok</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:60%">
+                            <div class="tag bold flex">Docker</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:60%">
+                            <div class="tag bold flex">Unit testing</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:50%">
+                            <div class="tag bold flex">Database</div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:50%">
+                            <div class="tag bold flex">Android</div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:50%">
+                            <div class="tag bold flex">Search Engine</div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:80%">
+                            <div class="tag bold flex">Clean code</div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="flex mg-top-40">
+                <div class="row">
+                    <h2>
+                        Interests
+                    </h2>
+                </div>
+            </div>
+
+            <div class="flex label-wrap mg-top-20">
+
+                <div class="flex row-gt-sm">
+                    <div class="flex bullet-wrap ">
+                        <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x">
+                            <div class="hexagon">
+                                <img src="./img/java.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="waypoint animated fade-in" data-animation="fade-in">
+                            <div class="label bold">Java</div>
+                            <div class="about-lead">
+                                My main programming language, with strong experience.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex bullet-wrap ">
+                        <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
+                            <div class="hexagon">
+                                <img src="./img/blockchain.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="waypoint animated fade-in" data-animation="fade-in" data-delay=".2s" style="animation-delay: 0.2s;">
+                            <div class="label bold">Blockchain</div>
+                            <div class="about-lead">
+                                I'm into blockchain platforms, their infrastructure and concensus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex row-gt-sm">
+                    <div class="flex bullet-wrap ">
+                        <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
+                            <div class="hexagon">
+                                <img src="./img/ai.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="waypoint animated fade-in" data-animation="fade-in" data-delay=".4s" style="animation-delay: 0.4s;">
+                            <div class="label bold">AI</div>
+                            <div class="about-lead">
+                                AI algorithms are also my concern, especially AI in video games.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex bullet-wrap ">
+                        <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
+                            <div class="hexagon">
+                                <img src="./img/gadget.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="waypoint animated fade-in" data-animation="fade-in" data-delay=".6s" style="animation-delay: 0.6s;">
+                            <div class="label bold">Highend Gadgets</div>
+                            <div class="about-lead">
+                                I'm always eager to read about new cellphone and computer technology.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </div>
 
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-        <div class="column nature">
-            <div class="content">
-                <img src="./img/neo4j.png" alt="Mountains" style="width:100%">
-                <h4>Mountains</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column nature">
-            <div class="content">
-                <img src="./img/neo4j.png" alt="Lights" style="width:100%">
-                <h4>Lights</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column nature">
-            <div class="content">
-                <img src="./img/neo4j.png" alt="Nature" style="width:100%">
-                <h4>Forest</h4>
-                <p>Lorem ipsum dolor..</p>
+    <div class="container-fluid">
+
+        <div id="academic" class="row row-grey">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <div class="flex">
+                    <div class="row">
+                        <h2>
+                            Academic Background
+                        </h2>
+
+                    </div>
+                    <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+                </div>
+
+                <!-- HCMUT -->
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <a href="https://pw.edu.pl/engpw" target="blank">
+                            <img src="img/wut.png" class="img-responsive center-block logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4>Master</h4>
+                        <p>
+                            <b>University</b>: Warsaw University of Technology
+                            <br><b>Major</b>: Artificial Intelligence
+                            <br><b>GPA</b>: 4.53/5
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WUT -->
+                <div class="row mg-top-20">
+
+                    <div class="col-lg-4">
+                        <a href="https://www.hcmut.edu.vn/en" target="blank">
+                            <img src="img/hcmut.png" class="img-responsive center-block logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4>Bachelor</h4>
+                        <p>
+                            <b>University</b>: Ho Chi Minh city University of Technology
+                            <br><b>Major</b>: Computer Science
+                            <br><b>GPA</b>: 8.05/10
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div class="column cars">
-            <div class="content">
-                <img src="./img/neo4j.png" alt="Car" style="width:100%">
-                <h4>Retro</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column cars">
-            <div class="content">
-                <img src="./img/neo4j.png" alt="Car" style="width:100%">
-                <h4>Fast</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column cars">
-            <div class="content">
-                <img src="./img/neo4j.png" alt="Car" style="width:100%">
-                <h4>Classic</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
+        <div id="experience" class="row row-white">
+            <div class="col-sm-8 col-sm-offset-2">
 
-        <div class="column people">
-            <div class="content">
-                <img src="./img/me500.png" alt="People" style="width:100%">
-                <h4>Girl</h4>
-                <p>Lorem ipsum dolor..</p>
+                <div class="flex">
+                    <div class="row">
+                        <h2>
+                            Working Experience
+                        </h2>
+                    </div>
+                    <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+                </div>
+
+                <!-- Metanet -->
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <a href="http://www.metanet.co.kr/en/" target="blank">
+                            <img src="img/projects/thumbnails/metanet.png" class="img-responsive center-block logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4>Metanet Asia (09/2019 - 09/2020)</h4>
+                        <p>
+                            Associate Software Engineer
+                            <br> Fulltime
+                            <br> Ho Chi Minh City, Vietnam
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GNT -->
+                <div class="row mg-top-20">
+
+                    <div class="col-lg-4">
+                        <a href="http://www.metanet.co.kr/en/" target="blank">
+                            <img src="img/projects/thumbnails/gnt.svg" class="img-responsive center-block logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h4>GNT Vietnam (06/2018 - 07/2019)</h4>
+                        <p>
+                            Junior Java Developer
+                            <br> Part-time
+                            <br> Ho Chi Minh City, Vietnam
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="column people">
-            <div class="content">
-                <img src="./img/me500.png" alt="People" style="width:100%">
-                <h4>Man</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <div class="column people">
-            <div class="content">
-                <img src="./img/me500.png" alt="People" style="width:100%">
-                <h4>Woman</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-        </div>
-        <!-- END GRID -->
     </div>
 
-    <script src="./js/portfolio.js"></script>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius">
+        <img src="img/back-to-top.png" alt="">
+    </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 

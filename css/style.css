@@ -1,5 +1,4 @@
 @import "font.css";
-
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +8,13 @@
 a:hover {
     opacity: 0.5;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 body {
     color: white;
     font-family: 'Effra';
-    background-image: linear-gradient(#072142,#020C17);
+    background-image: linear-gradient(#072142, #020C17);
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 40px 0;
+    padding: 25px 40px 15px;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -34,10 +34,18 @@ nav {
 }
 
 nav .name {
+    color: white;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
     position: relative;
     z-index: 200;
+}
+
+nav .name:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
 }
 
 .wrap {
@@ -49,7 +57,8 @@ nav .name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 7rem;
+    position: absolute;
+    right: 7rem;
 }
 
 .wrap .icons a {
@@ -74,12 +83,6 @@ nav .name {
     margin-bottom: 9px;
 }
 
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16;;
-}
-
 .nav-links .icons {
     display: none;
 }
@@ -95,7 +98,7 @@ nav .name {
     background-color: #f9f9f9;
     width: 300px;
     height: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     top: 80px;
     right: 40px;
@@ -114,7 +117,7 @@ nav .name {
 }
 
 .nav-links li {
-    opacity: 0;
+    /* opacity: 0; */
     width: 100%;
     text-align: center;
 }
@@ -140,6 +143,16 @@ nav .name {
     transition: all 0s ease;
 }
 
+.mg-top-20 {
+    margin-top: 20px;
+}
+
+.mg-top-40 {
+    margin-top: 40px;
+}
+
+
+/* 
 @media screen and (max-width: 420px) {
     .wrap .icons {
         display: none;
@@ -172,4 +185,29 @@ nav .name {
         padding-bottom: 30%;
     }
 
+}
+ */
+
+.dmtop {
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: -100px;
+    border-radius: 3px;
+    right: 40px;
+    cursor: pointer;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.dmtop.show {
+    bottom: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
 }

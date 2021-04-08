@@ -1,0 +1,392 @@
+section:nth-of-type(3) .title-text {
+    font-size: var(--title-text-size-md);
+}
+
+section:nth-of-type(3) .filter-wrap {
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+    margin: auto;
+    color: rgb(219, 219, 219);
+}
+
+section:nth-of-type(3) .filter {
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: 600;
+    padding: 0 40px;
+    z-index: 300;
+}
+
+section:nth-of-type(3) .float-bar {
+    bottom: 0;
+    left: 30px;
+    position: absolute;
+    top: 0;
+    background: #ff4d5a;
+    color: white;
+    border-radius: 1px;
+    height: 30px;
+    margin: auto 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    z-index: 300;
+}
+
+.flex.row-direction {
+    flex-direction: row;
+}
+
+section:nth-of-type(3) .float-bar .row-direction {
+    bottom: 0;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    margin: auto 0;
+    transition: left 0.5s ease-in-out;
+}
+
+section:nth-of-type(3) .float-bar .row-direction .filter {
+    color: #fff;
+    text-align: center;
+}
+
+section:nth-of-type(3) #gallery .mix {
+    display: none;
+    position: relative;
+    background: white;
+}
+
+section:nth-of-type(3) #gallery .mix .project-card {
+    max-width: 100%;
+    transition: 1s;
+    width: 320px;
+    height: 180px;
+}
+
+section:nth-of-type(3) #gallery .mix:hover .project-card {
+    opacity: 0;
+}
+
+section:nth-of-type(3) #gallery .mix:hover .text {
+    transform: translate(0, 30px);
+    opacity: 1;
+}
+
+section:nth-of-type(3) #gallery .mix:hover .button {
+    transform: translate(0, -30px);
+    opacity: 1;
+}
+
+section:nth-of-type(3) #gallery .text,
+section:nth-of-type(3) #gallery .button {
+    color: #1b242f;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+section:nth-of-type(3) #gallery .text .bold,
+section:nth-of-type(3) #gallery .button .bold {
+    font-size: 16pt;
+}
+
+section:nth-of-type(3) .text {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+section:nth-of-type(3) #gallery .button {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    border: 2px solid #ff4d5a;
+    font-size: 13pt;
+    margin: 0 auto;
+    padding: 7px 0;
+    width: 170px;
+}
+
+section:nth-of-type(3) #gallery .button:hover {
+    background-color: #ff4d5a;
+    color: whitesmoke;
+}
+
+.highlight {
+    color: #ff4d5a;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(3) .container {
+    padding: 2% 0 0 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    height: 50%;
+}
+
+section:nth-of-type(3) #gallery {
+    margin: 20px 0;
+}
+
+.animated.fade-in {
+    animation: fadeIn 0.75s ease both;
+}
+
+
+/* Modal */
+
+.modal-wrap.visible {
+    pointer-events: initial;
+}
+
+.modal-wrap {
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+.modal-wrap.visible .mask {
+    opacity: 1;
+}
+
+.modal-wrap .mask {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+
+.modal-wrap.visible .project-modal {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-wrap .project-modal {
+    align-items: flex-start;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    box-sizing: border-box;
+    color: #333;
+    height: initial;
+    opacity: 0;
+    position: relative;
+    text-align: left;
+    transform: scale(0.8);
+    transition: all 0.3s;
+    max-width: 700px;
+}
+
+.modal-wrap .info-box {
+    border-top: 3px solid #1b242f;
+    box-sizing: border-box;
+    color: #444;
+    padding: 15px 25px 85px 25px;
+}
+
+.modal-wrap .title-modal {
+    font-family: "Raleway Heavy";
+    font-size: 22pt;
+    line-height: 30pt;
+}
+
+.modal-wrap .tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #c0c0c0;
+    display: block;
+    font-family: "Raleway";
+    font-size: 11pt;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.modal-wrap .detail {
+    font-size: 11pt;
+    line-height: 18pt;
+    margin-top: 15px;
+}
+
+.modal-wrap .close {
+    bottom: 25px;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 20pt;
+    font-weight: 800;
+    position: absolute;
+    right: 25px;
+}
+
+.modal-wrap .button {
+    background: #ff4d5a;
+    border: 0;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11pt;
+    font-weight: 600;
+    left: 25px;
+    padding: 10px 20px;
+    pointer-events: none;
+    position: absolute;
+    transition: all 0.3s;
+    font-family: 'Raleway';
+    visibility: hidden;
+}
+
+.modal-wrap .button.visible {
+    pointer-events: initial;
+    visibility: visible;
+}
+
+.modal-wrap .btn-view-site {
+    visibility: hidden;
+    left: 180px;
+}
+
+.modal-wrap .btn-view-site.visible {
+    pointer-events: initial;
+    visibility: visible;
+}
+
+.modal-wrap .btn-details {
+    pointer-events: initial;
+}
+
+.slide,
+.carousel-wrap {
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-wrap {
+    display: none;
+}
+
+.carousel-wrap.visible {
+    display: block;
+}
+
+.window {
+    background: #222;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel {
+    position: relative;
+    top: 0;
+    width: 10000px;
+}
+
+.slide {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 450px;
+    justify-content: center;
+}
+
+.mdi-chevron-left,
+.mdi-chevron-right {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    cursor: pointer;
+    font-size: 25pt !important;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute;
+}
+
+.mdi {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.mdi-chevron-left {
+    left: 0;
+}
+
+.mdi-chevron-right {
+    right: 0;
+}
+
+.modal-wrap .mdi-open-in-new {
+    width: 15px;
+    left: -5px;
+    top: -2px;
+    position: relative;
+}
+
+.modal-wrap .close {
+    bottom: 15px;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 20pt;
+    font-weight: 800;
+    position: absolute;
+    right: 25px;
+}
+
+.transition {
+    transition: ease-in-out 0.5s;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(1) .project-card {
+    background: url(../img/projects/thumbnails/cryptia.png) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(2) .project-card {
+    background: url(../img/projects/thumbnails/gnt.svg) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(3) .project-card {
+    background: url(../img/projects/thumbnails/mcc.png) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(4) .project-card {
+    background: url(../img/projects/thumbnails/kms.jpeg) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(5) .project-card {
+    background: url(../img/projects/thumbnails/metahub.jpeg) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(6) .project-card {
+    background: url(../img/projects/thumbnails/afes.jpg) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(7) .project-card {
+    background: url(../img/projects/thumbnails/inu-logo.png) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(8) .project-card {
+    background: url(../img/projects/thumbnails/humandetect.png) center center/cover;
+}
+
+section:nth-of-type(3) #gallery .mix:nth-child(9) .project-card {
+    background: url(../img/projects/thumbnails/bkrypto.png) center center/cover;
+}

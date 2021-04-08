@@ -10,23 +10,25 @@
     <link rel="stylesheet" href="./css/fullpage.css">
     <link rel="stylesheet" href="./css/style.css">
 
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
 
     <nav>
-        <div class="name">LINH LE</div>
-
         <div class="wrap">
+            <div class="name">LINH LE</div>
             <div class="icons">
-                <a href="#">
+                <a href="https://www.facebook.com/le.manhlinh.43/">
                     <img src="./img/facebook.svg" alt="">
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/linh-le-219640194/">
                     <img src="./img/linkedin.svg" alt="">
                 </a>
-                <a href="#">
+                <a href="https://github.com/lml43">
                     <img src="./img/github.svg" alt="">
                 </a>
             </div>
@@ -39,9 +41,10 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Projects</a></li>
+            <li><a href="#section4">Contact</a></li>
 
             <li class="icons">
                 <a href="#">
@@ -57,23 +60,62 @@
         </ul>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="project-modal" id="modal">
+            <div class="carousel-wrap">
+                <div class="window">
+                    <div id="carousel">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                    <div class="mdi mdi-chevron-left" id="prev">
+                        <img src="./img/chevron-left.png" alt="">
+                    </div>
+                    <div class="mdi mdi-chevron-right" id="next">
+                        <img src="./img/chevron-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="title-modal"></div>
+                <div class="tag"></div>
+                <div class="detail"></div>
+                <a href="#" target="_blank">
+                    <div class="button btn-details">
+                        MORE DETAILS
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="button btn-view-site">
+                        <img src="./img/open-in-new.png" class="mdi mdi-open-in-new"></i>VIEW SITE
+                    </div>
+                </a>
+            </div>
+            <div class="close mdi mdi-close">
+                <img src="img/close.png" alt="">
+            </div>
+        </div>
+    </div>
+
 
     <div id="fullpage">
         <!-- ---------------------- Section 1 ---------------------- -->
-        <section class="section s1">
+        <section data-anchor="section1" class="section s1">
             <div class="fullpage_slide">
 
                 <!-- Title -->
                 <div class="title top50">
                     <h1 class="title-text animated">LINH<br>LE</h1>
-                    <div class="border">
+                    <div class="border-line">
                         <span></span>
                         <span></span>
                     </div>
                     <p class="title-lead slide-in-left">
                         backend /
-                        <br>
-                        java developer.
+                        <br> java developer.
                     </p>
                 </div>
 
@@ -110,13 +152,13 @@
         </section>
 
         <!-- ---------------------- Section 2 ---------------------- -->
-        <section class="section s2">
+        <section data-anchor="section2" class="section s2">
             <div class="fullpage_slide">
 
                 <!-- Title -->
                 <div class="title top25">
                     <h1 class="title-text">About Me</h1>
-                    <div class="border">
+                    <div class="border-line">
                         <span></span>
                         <span></span>
                     </div>
@@ -189,9 +231,7 @@
                         <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
                         <div class="label bold">Who's this guy?</div>
                         <div class="about-lead">
-                            I have 2-year experience as a backend developer. <br>
-                            I’m studying a Master program of AI
-                            <br> in Warsaw University of Technology.
+                            I’m studying a Master program of AI in Warsaw University of Technology. <br> I have 2-year experience as a backend developer.
                         </div>
 
                         <div class="btn-wrap flex">
@@ -199,8 +239,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-50-gt-sm waypoint bars-wrap animated slide-in-right"
-                        data-animation="slide-in-right">
+                    <div class="flex flex-50-gt-sm waypoint bars-wrap animated slide-in-right" data-animation="slide-in-right">
                         <div class="bar flex border-white">
                             <div class="bar fill" style="width:80%">
                                 <div class="tag bold flex">Java</div>
@@ -275,11 +314,174 @@
 
             </div>
         </section>
-        <section class="section s3">
-            <h1>Experience</h1>
+
+        <!-- -------------------- Section 3 -------------------- -->
+        <section data-anchor="section3" class="section s3">
+            <!-- Title -->
+            <div class="title top22">
+                <h1 class="title-text">My Projects</h1>
+                <div class="border-line">
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="container">
+                <!-- Filter -->
+                <div class="filter-wrap waypoint animated fade-in" data-animation="fade-in">
+                    <div class="filter-wrap waypoint" data-animation="fade-in">
+                        <div class="flex row-direction">
+                            <div class="filter" data-filter="all">ALL</div>
+                            <div class="filter" data-filter=".java">JAVA</div>
+                            <div class="filter" data-filter=".blockchain">BLOCKCHAIN</div>
+                            <div class="filter" data-filter=".microservices">MICROSERVICES</div>
+                            <div class="filter" data-filter=".others">OTHERS</div>
+                        </div>
+                        <div class="float-bar">
+                            <div class="flex row-direction">
+                                <div class="filter" data-filter="all">ALL</div>
+                                <div class="filter" data-filter=".java">JAVA</div>
+                                <div class="filter" data-filter=".blockchain">BLOCKCHAIN</div>
+                                <div class="filter" data-filter=".microservices">MICROSERVICES</div>
+                                <div class="filter" data-filter=".others">OTHERS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div id="gallery" class="flex row wrap animated">
+                    <div class="mix java blockchain" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">World of Crypia</div>
+                                <span class="highlight">Java / Ethereum</span>
+                            </div>
+                            <div class="button" id="cryptia">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix java microservices" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">GSOP</div>
+                                <span class="highlight">Java / Microservices / GraphQL</span>
+                            </div>
+                            <div class="button" id="gsop">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix java" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">Metanet Messenger</div>
+                                <span class="highlight">Java / Websocket</span>
+                            </div>
+                            <div class="button" id="mcc">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix java microservices" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">KMS</div>
+                                <span class="highlight">Java / Microservices</span>
+                            </div>
+                            <div class="button" id="kms">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix java" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">MetaHUB</div>
+                                <span class="highlight">IP Calls / PBX / CTI / IVR</span>
+                            </div>
+                            <div class="button" id="metahub">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix blockchain" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">Anti-fraud System</div>
+                                <span class="highlight">EoS</span>
+                            </div>
+                            <div class="button" id="afes">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix others" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">INUTIFY</div>
+                                <span class="highlight">Android / Machine Learning</span>
+                            </div>
+                            <div class="button" id="inutify">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix others" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">Human Detection</div>
+                                <span class="highlight">SVM / Image Processing</span>
+                            </div>
+                            <div class="button" id="humandetect">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                    <div class="mix others" data-my-order="1">
+                        <div>
+                            <div class="project-card"></div>
+                            <div class="text">
+                                <div class="bold">BKrypto</div>
+                                <span class="highlight">Android</span>
+                            </div>
+                            <div class="button" id="bkrypto">LEARN MORE</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
-        <section class="section s4">
-            <h1>Contact</h1>
+
+        <!-- --------------------Section 4-------------------- -->
+        <section data-anchor="section4" class="section s4">
+            <!-- Title -->
+            <div class="title top25">
+                <h1 class="title-text">Contact Me</h1>
+                <div class="border-line">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="container flex">
+                <div class="highlight waypoint animated slide-in-right">
+                    Have a question or want to work together?
+                </div>
+                <form id="contact-form" class="waypoint animated pop-in" action="https://formspree.io/f/xleaewap" method="POST">
+                    <input placeholder="Name" type="text" name="name" required="">
+                    <input placeholder="Enter email" type="email" name="email" required="">
+                    <textarea placeholder="Your Message" type="text" name="message"></textarea>
+                    <div id="success">
+                        <div>
+                            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+                        </div>
+                        <span id="close" class="mdi mdi-close"></span>
+                    </div>
+                    <input class="button" type="submit" id="submit" value="SUBMIT">
+                </form>
+            </div>
         </section>
 
     </div>
@@ -300,14 +502,24 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Mixitup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.9/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+
     <script src="./js/fullpage.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/mousemove.js"></script>
-
+    <script src="./js/modal.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/pt.min.js"></script>
+    <script src="./js/portfolio.js"></script>
+    <script src="./js/fullpage.js"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
         integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>

@@ -21,6 +21,10 @@ section:nth-of-type(2) .bullet-wrap {
     padding: 0 10px;
 }
 
+section:nth-of-type(2) .title-text {
+    font-size: var(--title-text-size-md);
+}
+
 .hex-wrap {
     display: inline-block;
     height: 80px;
@@ -86,6 +90,7 @@ section:nth-of-type(2) .skills-wrapper {
     text-align: center;
     width: 100%;
     margin: 225px 10% 0 10%;
+    overflow: hidden;
 }
 
 section:nth-of-type(2) .skills-wrapper .me {
@@ -93,7 +98,7 @@ section:nth-of-type(2) .skills-wrapper .me {
     width: 290px;
 }
 
-section:nth-of-type(2) .skills-wrapper > .flex:first-child {
+section:nth-of-type(2) .skills-wrapper>.flex:first-child {
     padding: 0 50px 0 50px;
 }
 
@@ -118,8 +123,6 @@ section:nth-of-type(2) .bar {
     height: 28px;
     margin: 0 0 15px 0;
     position: relative;
-
-    
 }
 
 section:nth-of-type(2) .bar.fill {
@@ -169,14 +172,14 @@ section:nth-of-type(2) .bar span {
     transition: all 0s ease-in-out;
 }
 
-.progress {
+.animated-progress {
     animation: initState 1s ease-in-out;
     animation-delay: 0.5s;
-    animation-fill-mode: both; 
+    animation-fill-mode: both;
 }
 
 @keyframes initState {
-  0% { width: 0; }
+    0% {
+        width: 0;
+    }
 }
-
-
