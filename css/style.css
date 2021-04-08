@@ -106,6 +106,7 @@ nav .name:hover {
     display: none;
     position: fixed;
     list-style: none;
+    font-family: 'Raleway';
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
