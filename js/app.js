@@ -8,8 +8,6 @@ hamburger.addEventListener("click", () => {
     isOpen = !isOpen;
     navLinks.classList.toggle("open");
 
-    console.log(links)
-
     let tl = new TimelineMax();
     links.forEach(link => {
         if (isOpen) {
@@ -22,7 +20,6 @@ hamburger.addEventListener("click", () => {
 
 var scrollTrigger = 100; // px
 backToTop = function() {
-    console.log("hello");
     var scrollTop = $(window).scrollTop();
     if (scrollTop > scrollTrigger) {
         $('#scroll-to-top').addClass('show');

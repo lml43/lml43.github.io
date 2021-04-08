@@ -203,7 +203,7 @@ a {
     vertical-align: middle;
     width: 100%;
     border-radius: 50%;
-    border: white 4px solid;
+    border: rgb(179, 179, 179) 4px solid;
 }
 
 .cloud {
