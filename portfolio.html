@@ -100,7 +100,7 @@
                         <p>A blockchain game which is built on Ethereum. In this world, user can trade or explore items using ETH. The game logic and smart contracts are inspired by Cryptokitties.
                             <br>
                             <br>This was the topic of my 2-month internship program in GNT Vietnam. Initially, I worked as a full-stack developer due to the lacking of resources (only 1 backend developer and 2 intern students). After 2 months, we successfully
-                            created a prototype having some basic requirements. At that time, my internship ended I continued to work as a part-time employee. Then, I not only worked in the backend site (including APIs, database, search engine - but also
+                            created a prototype having some basic requirements. After the internship program, I continued to work as a part-time employee. Then, I not only worked in the backend site (including APIs, database, search engine - but also
                             supported my senior to build Ethereum’s smart contracts.
                         </p>
                     </div>
@@ -203,6 +203,81 @@
             </div>
         </div>
 
+        <div id="master_thesis" class="row row-white">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <div class="row work-item-row">
+                    <h2 class="col-lg-12 project-name">
+                        Reinforcement Learning for video games
+                    </h2>
+                    <div class="col-lg-6 col-lg-push-5">
+                        <img src="img/projects/thumbnails/master-thesis.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-lg-6 col-lg-pull-7">
+
+                        <p>
+                            This project is my Master thesis. The purpose of this master thesis is to research on an improvement of the branching architecture for Deep Reinforcement Learning, as an effort to cover more sophisticated games, where the action space may include both
+                            continuous and discrete actions (as known as a hybrid action space).
+                        </p>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <p>
+                            The games with different difficulty levels are built in Unity Editor and the algorithms implementation is powered by Unity ML-Agents, a Python API allows developer to interact and extract necessary information for the training process.
+                            <h4>Technology</h4>
+                            <p>
+                                The project is implemented in Python and is capable to be used with a custom training environment built from Unity Editor, powered by Unity ML-Agents Toolkit.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <img src="img/techlogos/unity.png" class="techlogo">
+                        <img src="img/techlogos/python.png" class="techlogo">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="game_jam" class="row row-grey">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="project-name">
+                    Stranger School (Brackeys Game Jam 2021.2)
+                </h2>
+                <div class="row work-item-row">
+                    <div class="col-lg-6">
+                        <img src="img/projects/thumbnails/game-jam.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-lg-6">
+
+                        <p>
+                            I joined my very first Game Jam in August 2021. This was a 1-week project, and the game was built from scratch after the theme was puslished by the host. Although our team ranked #900/1741, this Game Jam was still a memorable event for me, where I could
+                            learn so many things about how to make a game in Unity - a fundamental stage to start working on my master thesis.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <h4>Technology</h4>
+                        <p>The art works were created by a designer, and I took care the game development. All was done in Unity.</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <img src="img/techlogos/unity.png" class="techlogo">
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <a class="btn btn-launch" href="https://manhlinh0403.itch.io/stranger-school" target="blank">
+                        Open game site
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
         <div id="gsop" class="row row-white">
             <div class="col-sm-8 col-sm-offset-2">
 
@@ -240,48 +315,38 @@
             </div>
         </div>
 
-        <div id="inutify" class="row row-grey">
+        <div id="axie_claim" class="row row-grey">
             <div class="col-sm-8 col-sm-offset-2">
-
+                <h2 class="project-name">
+                    Axie Infinity auto claim tool
+                </h2>
                 <div class="row work-item-row">
-                    <div class="col-lg-4">
-                        <img src="img/projects/thumbnails/inutify.png" class="img-responsive center-block">
+                    <div class="col-lg-5">
+                        <img src="img/projects/thumbnails/aixe.jpeg" class="img-responsive center-block">
                     </div>
-                    <div class="col-lg-8">
-                        <h2>
-                            <a class="project-name" href="https://gitlab.com/inutify" target="blank">
-								Inutify
-							</a>
-                        </h2>
+                    <div class="col-lg-7">
                         <p>
-                            By training on Convolutional Neural Network (CNN), a dog-identifiable model be created. In details, the input image will be extracted into specific features, after several layers, the trained model can determine the class that the dog belongs to.
+                            A side project for auto claiming SLP tokens in Axie Infinity. I built a backend server in Java, which was able to create transaction for getting signature and claiming the tokens. There is a scheduled job that executes hourly for checking whether the
+                            accounts are claimable or not.
                         </p>
 
                         <h4>Technology</h4>
-                        <p>In training phrase, I used Keras and Mobilenet model and Keras also provided some functions for processing images. Then the trained model must be converted into a TensorflowLite model to use in the Android application</p>
-
-                        <div class="row text-center">
-                            <div class="col-xs-12">
-                                <img src="img/techlogos/android.png" class="techlogo">
-                                <img src="img/techlogos/keras.png" class="techlogo">
-                                <img src="img/techlogos/tensorflow.png" class="techlogo">
-                            </div>
-                        </div>
-
-                        <div class="row text-center">
-                            <a class="btn btn-launch" href="https://gitlab.com/inutify" target="blank">
-                                Open source on Gitlab
-                            </a>
-                        </div>
+                        <p>The backend server was built in Spring Boot, with the help of Web3j to interact with Ethereum network.</p>
                     </div>
 
 
-
                 </div>
-
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <img src="img/techlogos/ethereum.png" class="techlogo">
+                        <img src="img/techlogos/spring.png" class="techlogo">
+                    </div>
+                </div>
 
             </div>
         </div>
+
+
 
         <div id="afes" class="row row-white">
             <div class="col-sm-8 col-sm-offset-2">
@@ -357,7 +422,46 @@
             </div>
         </div>
 
-        <div id="humandetect" class="row row-white">
+
+        <div id="inutify" class="row row-white">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <div class="row work-item-row">
+                    <div class="col-lg-4">
+                        <img src="img/projects/thumbnails/inutify.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-lg-8">
+                        <h2>
+                            <a class="project-name" href="https://gitlab.com/inutify" target="blank">
+								Inutify
+							</a>
+                        </h2>
+                        <p>
+                            By training on Convolutional Neural Network (CNN), a dog-identifiable model be created. In details, the input image will be extracted into specific features, after several layers, the trained model can determine the class that the dog belongs to.
+                        </p>
+
+                        <h4>Technology</h4>
+                        <p>In training phrase, I used Keras and Mobilenet model and Keras also provided some functions for processing images. Then the trained model must be converted into a TensorflowLite model to use in the Android application</p>
+
+                        <div class="row text-center">
+                            <div class="col-xs-12">
+                                <img src="img/techlogos/android.png" class="techlogo">
+                                <img src="img/techlogos/keras.png" class="techlogo">
+                                <img src="img/techlogos/tensorflow.png" class="techlogo">
+                            </div>
+                        </div>
+
+                        <div class="row text-center">
+                            <a class="btn btn-launch" href="https://gitlab.com/inutify" target="blank">
+                                Open source on Gitlab
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="humandetect" class="row row-grey">
             <div class="col-sm-8 col-sm-offset-2">
 
                 <div class="row work-item-row">
@@ -397,7 +501,7 @@
             </div>
         </div>
 
-        <div id="metahub" class="row row-grey">
+        <div id="metahub" class="row row-white">
             <div class="col-sm-8 col-sm-offset-2">
 
                 <div class="row work-item-row">

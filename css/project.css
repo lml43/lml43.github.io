@@ -372,7 +372,7 @@ section:nth-of-type(3) #gallery .mix:nth-child(4) .project-card {
 }
 
 section:nth-of-type(3) #gallery .mix:nth-child(5) .project-card {
-    background: url(../img/projects/thumbnails/metahub.jpeg) center center/cover;
+    background: url(../img/projects/thumbnails/master-thesis.png) center center/cover;
 }
 
 section:nth-of-type(3) #gallery .mix:nth-child(6) .project-card {
@@ -384,9 +384,9 @@ section:nth-of-type(3) #gallery .mix:nth-child(7) .project-card {
 }
 
 section:nth-of-type(3) #gallery .mix:nth-child(8) .project-card {
-    background: url(../img/projects/thumbnails/humandetect.png) center center/cover;
+    background: url(../img/projects/thumbnails/aixe.jpeg) center center/cover;
 }
 
 section:nth-of-type(3) #gallery .mix:nth-child(9) .project-card {
-    background: url(../img/projects/thumbnails/bkrypto.png) center center/cover;
+    background: url(../img/projects/thumbnails/game-jam.png) center center/cover;
 }
